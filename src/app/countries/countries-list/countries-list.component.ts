@@ -13,6 +13,7 @@ export class CountriesListComponent implements OnInit {
   countries:Countries[];
   arrCountries=[];
   inside=[];
+  size=[1,2,3,4,5];
 
 
   constructor(private countriesSertvice:CountriesService) { }

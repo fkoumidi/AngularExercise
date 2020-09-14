@@ -1,57 +1,20 @@
-<h3>{{title}}</h3>
-<div>
+<br>
+<div class="grid-container">
   
-    <!-- <p *ngIf="country.region=='Europe'"> -->
-      <!-- Country:{{country.name}}.Region:{{country.region}}.PoP:{{country.population}} -->
       
-        <div *ngFor="let country of arrCountries">
+        <div *ngFor="let country of countries">
           <div class="card-deck">
             <div class="card border-secondary mb-3">
-              <img src="{{country[0].flag}}" class="card-img-top" alt="Card image cap" width="100" height="100">
+              <img src="{{country.flag}}" class="card-img-top" alt="Card image cap" width="100" height="140">
               <div class="card-body">
-                <h5 class="card-title">{{country[0].name}}</h5>
-                <p class="card-text">Capital:{{country[0].capital}} , Region:{{country[0].region}}</p>
-                <!-- <p class="card-text"></p> -->
-              </div>
-            </div>
-            <div class="card border-secondary mb-3">
-              <img src="{{country[1].flag}}" class="card-img-top" alt="Card image cap" width="100" height="100">
-              <div class="card-body">
-                <h5 class="card-title">{{country[1].name}}</h5>
-                <p class="card-text">Capital:{{country[0].capital}} , Region:{{country[0].region}}</p>
-                <!-- <p class="card-text"></p> -->
-              </div>
-            </div>
-            <div class="card border-secondary mb-3">
-              <img src="{{country[2].flag}}" class="card-img-top" alt="Card image cap" width="100" height="100">
-              <div class="card-body">
-                <h5 class="card-title">{{country[2].name}}</h5>
-                <p class="card-text">Capital:{{country[0].capital}} , Region:{{country[0].region}}</p>
-                <!-- <p class="card-text"></p> -->
-              </div>
-            </div>
-            <div class="card border-secondary mb-3">
-              <img src="{{country[3].flag}}" class="card-img-top" alt="Card image cap" width="100" height="100">
-              <div class="card-body">
-                <h5 class="card-title">{{country[3].name}}</h5>
-                <p class="card-text">Capital:{{country[0].capital}} , Region:{{country[0].region}}</p>
-                <!-- <p class="card-text"></p> -->
-              </div>
-            </div>
-            <div class="card border-secondary mb-3">
-              <img src="{{country[4].flag}}" class="card-img-top" alt="Card image cap" width="100" height="100">
-              <div class="card-body">
-                <h5 class="card-title">{{country[4].name}}</h5>
-                <p class="card-text">Capital:{{country[0].capital}} , Region:{{country[0].region}}</p>
-                <!-- <p class="card-text"></p> -->
+                <h5 class="card-title">{{country.name}}</h5>
+                <p class="card-text">Capital:{{country.capital}}</p>
+                <p class="card-text">Region:{{country.region}}</p>
               </div>
             </div>
           </div>
-          <br>
         </div>
-     
-    <!-- </p> -->
-  
+      
 </div>
 
 

@@ -1,8 +1,9 @@
-:host{
-    text-align: center;
-    background-color: rgb(203, 206, 23);
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 20px;
     
-}
-
+    
+  }
 
 
